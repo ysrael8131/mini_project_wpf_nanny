@@ -1,0 +1,62 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+
+namespace PLWPF
+{
+    /// <summary>
+    /// Interaction logic for search_and_update.xaml
+    /// </summary>
+    public partial class search_and_update : Window
+    {
+        BL.IBL bl;
+
+        public search_and_update()
+        {
+            bl = BL.FactoryBl.getBl();
+            InitializeComponent();
+            List<string> lst = new List<string>
+            {
+                "Mother",
+                "Child",
+                "Nanny"
+            };
+            select_item_combobox.ItemsSource = lst;
+            var mothers = from item in bl.getListMothers()
+                          select item.id;
+            select_mother_conbobox.ItemsSource = mothers;
+
+        }
+
+
+        private void select_item_combobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+         
+            switch (select_item_combobox.SelectedItem.ToString())
+            {
+                case "Mother":
+                    mother_stackpanel.Visibility = Visibility;
+                    break;
+                case "Child":
+                    child_stackpanel.Visibility = Visibility;
+                    break;
+                case "Nanny":
+                    nanny_stackpanel.Visibility = Visibility;
+                    break;
+
+                default:
+                    break;
+            }
+        }
+    }
+}

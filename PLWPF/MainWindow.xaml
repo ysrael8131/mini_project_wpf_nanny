@@ -1,0 +1,30 @@
+﻿<Window x:Class="PLWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLWPF"
+        mc:Ignorable="d"
+         Title="Window1" Height="700" Width="700" Background="AliceBlue">
+ 
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.25*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="add_button" Grid.Column="0" Content="press to add &#xD;&#xA;a new item" Margin="15" Click="add_button_Click" Style="{StaticResource ButtonStyle1}" />
+        <Button x:Name="update_button"  Grid.Column="1" Content="press to uptate &#xD;&#xA;an item" Margin="15" Click="update_button_Click" Style="{StaticResource ButtonStyle1}" MouseEnter="MouseEnter"/>
+        <Button x:Name="grooping_button" Grid.Column="2" Content="grooping" Margin="15" Click="grooping_button_Click" Style="{StaticResource ButtonStyle1}" MouseEnter="MouseEnter"/>
+        <Button x:Name="find_nanny_button"  Grid.Column="3" Content="find nanny" Margin="15" Click="find_nanny_button_Click" Style="{StaticResource ButtonStyle1}" MouseEnter="MouseEnter" />
+        <local:buttons_to_add x:Name="buttons_to_add" Grid.Row="1" Visibility="Hidden" />
+        <Image Grid.ColumnSpan="3" Grid.Column="1"  Grid.Row="1" Source="gg.png" Stretch="Fill"  MouseEnter="MouseEnter" />
+
+    </Grid>
+
+</Window>

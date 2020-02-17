@@ -1,0 +1,145 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLWPF"
+        xmlns:BE="clr-namespace:BE;assembly=BE" x:Class="PLWPF.add_contruct"
+        mc:Ignorable="d"
+        Title="add_contruct" Height="480" Width="398.6" Loaded="Window_Loaded" FontFamily="Segoe UI Semibold">
+    <Window.Resources>
+        <CollectionViewSource x:Key="contractViewSource" d:DesignSource="{d:DesignInstance {x:Type BE:Contract}, CreateList=True}"/>
+    </Window.Resources>
+    <Grid Background="AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="16*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="{StaticResource BackgroundGrid}" Margin="15">
+
+            <StackPanel x:Name="mom_child_nan_stackpanel" Visibility="Visible">
+
+
+                <StackPanel  x:Name="mother_stackpanel" Visibility="Visible" Orientation="Horizontal">
+                    <TextBlock x:Name="select_mother" Text="Select mother" Margin="15" FontFamily="Impact" Foreground="Brown"/>
+                    <ComboBox x:Name="select_mother_conbobox" DisplayMemberPath="id" Width="90" Margin="15" SelectionChanged="select_mother_conbobox_SelectionChanged" BorderThickness="3" FontFamily="Impact"/>
+                </StackPanel>
+
+                <StackPanel  x:Name="child_stackpanel" Visibility="Visible" Orientation="Horizontal">
+                    <TextBlock x:Name="select_child" Text="Select child" Margin="15" FontFamily="Impact" Foreground="Brown"/>
+                    <ComboBox  DisplayMemberPath="id" IsEnabled="{Binding ElementName=select_mother_conbobox, Path=SelectedItem}" 
+                      x:Name="select_child_conbobox" Width="90" Margin="15" SelectionChanged="select_child_conbobox_SelectionChanged" BorderThickness="3" FontFamily="Impact"/>
+                </StackPanel>
+                <StackPanel x:Name="nanny_stackpanel" Visibility="Visible" Orientation="Horizontal">
+                    <TextBlock x:Name="select_nannys" Text="Select nanny" Margin="15" FontFamily="Impact" Foreground="Brown"/>
+                    <ComboBox x:Name="select_nanny_conbobox" DisplayMemberPath="id" Width="90" Margin="15" SelectionChanged="select_nanny_conbobox_SelectionChanged" BorderBrush="Blue" BorderThickness="3" FontFamily="Impact"/>
+                </StackPanel>
+                <Button x:Name="select_button" HorizontalAlignment="Center" Content="build your contract" Height="25" Visibility="Visible" Click="select_button_Click">
+
+                <Button.Style >
+                    <Style>
+                        <Style.Triggers>
+                                <DataTrigger Binding="{Binding ElementName=select_mother_conbobox, Path=Text}" Value="">
+                                <Setter Property="Button.IsEnabled" Value="False"/>
+                            </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=select_child_conbobox, Path=Text  }" Value="">
+                                <Setter Property="Button.IsEnabled" Value="False"/>
+                            </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=select_nanny_conbobox, Path=Text}" Value="">
+                                <Setter Property="Button.IsEnabled" Value="False"/>
+                            </DataTrigger>
+
+                            
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+
+
+            </StackPanel>
+            <Grid x:Name="contract_grid" Visibility="Collapsed" Margin="0" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.ColumnSpan="2"  Text="your contract" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" />
+                <Label Content="Nanny ID:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="1" VerticalAlignment="Center"/>
+                <TextBlock x:Name="nannyIDTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="3" Grid.Row="1"  Text="{Binding NannyID}" VerticalAlignment="Center"/>
+                <Label Content="Mother ID:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="2" VerticalAlignment="Center"/>
+                <TextBlock x:Name="motherIDTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="3" Grid.Row="2" Text="{Binding MotherID}" VerticalAlignment="Center"/>
+
+                <Label Content="child ID:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="3" VerticalAlignment="Center"/>
+                <TextBlock x:Name="childIDTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="3" Grid.Row="3" Text="{Binding childID}" VerticalAlignment="Center"/>
+
+                <Label Content="per hour able:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="4" VerticalAlignment="Center"/>
+                <CheckBox x:Name="contracPerCheckBox" Content="" Grid.Column="1" HorizontalAlignment="Left" IsEnabled="False" IsChecked="{Binding ContracPer, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="3" Grid.Row="4" VerticalAlignment="Center"/>
+
+
+                <Label Content="salary Per Hour:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="5" VerticalAlignment="Center"/>
+                <TextBlock x:Name="salaryPerHourTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="3" Grid.Row="5" Text="{Binding salaryPerHour}" VerticalAlignment="Center"/>
+                <Label Content="salary Per Month:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="6" VerticalAlignment="Center"/>
+                <TextBlock x:Name="salaryPerMonthTextBlock" HorizontalAlignment="Left" Text="{Binding salaryPerMonth}" VerticalAlignment="Center" Grid.Row="6" Grid.Column="1"/>
+
+                <Grid Grid.Row="7" VerticalAlignment="Center" HorizontalAlignment="Center" Background="AntiqueWhite"  Grid.ColumnSpan="2" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                      <RowDefinition Height="auto"/>
+
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="enter the folowing" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="59,7,58,11.6"  Grid.Row="0" Grid.ColumnSpan="2"/>
+                  <Label Content="start:" Grid.Column="0" HorizontalAlignment="Left"  VerticalAlignment="Center" Grid.Row="1"/>
+                  <DatePicker x:Name="startDatePicker" HorizontalAlignment="Left"
+                              SelectedDate="{Binding start, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"
+                              VerticalAlignment="Center"  Grid.Row="1" Grid.Column="1" />
+
+                  <Label Content="end:" Grid.Column="0" HorizontalAlignment="Left"  VerticalAlignment="Center" Grid.Row="2"/>
+                  <DatePicker x:Name="endDatePicker" HorizontalAlignment="Left" 
+                              SelectedDate="{Binding end, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"
+                              VerticalAlignment="Center"  Grid.Row="2" Grid.Column="1" />
+
+                  <Label Content="knowlage Meet:" Grid.Column="0" HorizontalAlignment="Left" 
+                         VerticalAlignment="Center" Grid.Row="3" />
+                  <CheckBox x:Name="knowlageMeetCheckBox" Content="" HorizontalAlignment="Left"
+                            IsChecked="{Binding knowlageMeet, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"
+                             VerticalAlignment="Center" Grid.Row="3" Grid.Column="1" />
+
+                    <Label Content="contract Signe:" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Left"
+                          VerticalAlignment="Center" />
+                    <CheckBox x:Name="contractSigneCheckBox" Content="" HorizontalAlignment="Left"
+                              IsChecked="{Binding contractSigne, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"
+                              VerticalAlignment="Center" Grid.Row="4" Grid.Column="1" />
+                                       
+                </Grid>
+                <Button x:Name="add_contract_button" Grid.Row="8"  Background="LightSkyBlue" Content="Add Contract" Height="50" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center"  Click="add_contract_button_Click" />
+
+                <Button x:Name="payment" Grid.Row="8" Grid.Column="1"  Background="LightSkyBlue" Content="Calculate Payment" Height="50" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Click="payment_Click" />
+
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+
+
+</Window>

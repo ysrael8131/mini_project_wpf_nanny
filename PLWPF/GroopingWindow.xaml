@@ -1,0 +1,29 @@
+﻿<Window x:Class="PLWPF.GroopingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLWPF"
+        mc:Ignorable="d"
+        Title="GroopingWindow" Height="500" Width="900" FontSize="14" FontFamily="Segoe UI Semibold" Background="AliceBlue" Focusable="False">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="211*"/>
+        </Grid.RowDefinitions>
+        <Label Content="coose the corect groop to show " Grid.Row="0" HorizontalAlignment="Center" FontSize="20" Grid.ColumnSpan="3"/>
+        <Button x:Name="groopByDistanceButton" Style="{StaticResource ButtonStyle1}" FontSize="15" Content="   Contract&#xa;By Distance" Grid.Row="1"  Click="groopByDistanceButton_Click"/>
+        <Button x:Name="groopByMaxAgeButton"  Style="{StaticResource ButtonStyle1}" FontSize="15" Content="   nannys by &#xD;&#xA;children max age"  Grid.Row="1" Grid.Column="1" Click="groopByMaxAgeButton_Click"/>
+        <Button x:Name="groopByMinAgeButton"  Style="{StaticResource ButtonStyle1}" FontSize="15" Content="   nannys by &#xD;&#xA;children min age"  Grid.Row="1" Grid.Column="2" Click="groopByMinAgeButton_Click"/>
+      <!--<StackPanel Grid.Row="2" Grid.ColumnSpan="10">-->
+
+        <ContentControl x:Name="page" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="Black" BorderThickness="2" Grid.ColumnSpan="10" />
+      <!--</StackPanel>-->
+    </Grid>
+</Window>

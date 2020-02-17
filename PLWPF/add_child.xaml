@@ -1,0 +1,166 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLWPF"
+        xmlns:BE="clr-namespace:BE;assembly=BE" x:Class="PLWPF.add_child"
+        mc:Ignorable="d"
+        Title="add_child" Height="606" Width="600" Loaded="Window_Loaded"  FontFamily="Segoe UI Semibold">
+    <Window.Resources>
+        <CollectionViewSource x:Key="childViewSource" d:DesignSource="{d:DesignInstance {x:Type BE:Child}, CreateList=True}"/>
+        <SolidColorBrush x:Key="brushWatermarkBackground" Color="White" />
+        <SolidColorBrush x:Key="brushWatermarkForeground" Color="LightSteelBlue" />
+        <SolidColorBrush x:Key="brushWatermarkBorder" Color="Indigo" />
+        <SolidColorBrush x:Key="BackgroundGrid" Color="Beige"/>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+
+
+
+
+
+
+        <Style x:Key="textblock_style" TargetType="TextBlock">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Foreground" Value="{StaticResource brushWatermarkForeground}"/>
+            <Setter Property="Background" Value="{StaticResource brushWatermarkBackground}"/>
+            <Setter Property="Height" Value="25"/>
+        </Style>
+
+        <Style x:Key="textbox_style" TargetType="TextBox">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Left"/>
+            <Setter Property="Background" Value="{StaticResource brushWatermarkBackground}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource ResourceKey=brushWatermarkBorder}"/>
+            <Setter Property="Height" Value="25"/>
+            <!--<Setter TextBoxBase.TextChanged="textChange" Value="9" Property="TextBlock.Width"/>-->
+
+
+            <Style.Triggers>
+                <Trigger Property="Text" Value="">
+                    <Setter Property="Background" Value="Transparent"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="triger_to_textbox" TargetType="TextBox" >
+            <Style.Triggers>
+                <Trigger Property="Text" Value="">
+                    <Setter Property="Background" Value="Transparent"/>
+                </Trigger>
+            </Style.Triggers>
+
+
+
+        </Style>
+    </Window.Resources>
+
+
+
+
+
+    <Grid Background="AliceBlue"  >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2.6*"/>
+            <ColumnDefinition Width="1.5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="child_grid" Background="{StaticResource BackgroundGrid}" Margin="15">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Margin="10,10,9,9.2"  Text="Personal Information" TextAlignment="Center" FontSize="20" />
+
+            <TextBlock    Text=" ID" Grid.Row="1" Style="{StaticResource textblock_style}"
+         Visibility="{Binding ElementName=idTextBox,Path=Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+            <TextBox x:Name="idTextBox" Grid.Row="1" Margin="10" Style="{StaticResource textbox_style}" 
+         Text="{Binding id, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" TextChanged="textChange" />
+            <TextBlock x:Name="errorMesseg1" Text=" This field is for numbers only" Grid.Row="1" Style="{StaticResource textblock_style_error}" />
+            <TextBlock x:Name="errorMesseg2" Text="Number ID should be 9 digits" Grid.Row="1" Style="{StaticResource textblock_style_error}"/>
+            <TextBlock x:Name="errorMesseg3" Text="Number ID can not be negative" Grid.Row="1" Style="{StaticResource textblock_style_error}"/>
+
+
+            <TextBlock    Text="Mother ID" Grid.Row="2" Style="{StaticResource textblock_style}"
+         Visibility="{Binding ElementName=idTextBoxMother,Path=Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+            <TextBox x:Name="idTextBoxMother" Grid.Row="2" Style="{StaticResource textbox_style}" 
+         Text="{Binding MotherID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="10" TextChanged="textChange1"   />
+
+            <TextBlock x:Name="errorMesseg4" Text=" This field is for numbers only" Grid.Row="2" Style="{StaticResource textblock_style_error}" />
+            <TextBlock x:Name="errorMesseg5" Text="Number ID should be 9 digits" Grid.Row="2" Style="{StaticResource textblock_style_error}"/>
+            <TextBlock x:Name="errorMesseg6" Text="Number ID can not be negative" Grid.Row="2" Style="{StaticResource textblock_style_error}"/>
+
+            <TextBlock    Text="First Name" Grid.Row="4" Style="{StaticResource textblock_style}"
+ Visibility="{Binding ElementName=firstNameTextBox,Path=Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+            <TextBox x:Name="firstNameTextBox" Grid.Row="4" Style="{StaticResource textbox_style}" 
+ Text="{Binding FirstName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="10"  />
+
+
+
+            <TextBlock    Text="Birth day" Grid.Row="3" Style="{StaticResource textblock_style}"
+ Visibility="{Binding ElementName=birthDayDatePicker,Path=Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+            <DatePicker x:Name="birthDayDatePicker"  Grid.Row="3" 
+                    SelectedDate="{Binding birthDay, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" 
+                    VerticalAlignment="Center"  BorderBrush="{StaticResource brushWatermarkBorder}" Margin="15"   />
+
+            <Label Content="Special Needs:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="5" VerticalAlignment="Center"/>
+            <CheckBox x:Name="specialNeedsCheckBox" Content="" Grid.Column="0" IsChecked="{Binding specialNeeds, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" 
+                 HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center"/>
+
+
+            <TextBlock    Text="details Special Needs:" Grid.Row="6" Style="{StaticResource textblock_style}"
+         Visibility="{Binding ElementName=detailsSpecialNeedsTextBox,Path=Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+            <TextBox x:Name="detailsSpecialNeedsTextBox" Grid.Row="6" Style="{StaticResource textbox_style}" 
+         Text="{Binding detailsSpecialNeeds, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"
+                 IsEnabled="{Binding ElementName=specialNeedsCheckBox,Path=IsChecked}" Margin="10" />
+            <Button  Content="Creat"  Grid.Row="7" Margin="20"   BorderBrush="{StaticResource brushWatermarkBorder}" Click="Button_Click_Add_Child">
+                <Button.Style>
+                    <Style>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=idTextBox,Path=Text}" Value="">
+                                <Setter Property="Button.IsEnabled" Value="False"/>
+                            </DataTrigger>
+
+                            <DataTrigger Binding="{Binding ElementName=firstNameTextBox,Path=Text}" Value="">
+                                <Setter Property="Button.IsEnabled" Value="False"/>
+                            </DataTrigger>
+
+                            <DataTrigger Binding="{Binding ElementName=birthDayDatePicker,Path=Text}" Value="">
+                                <Setter Property="Button.IsEnabled" Value="False"/>
+                            </DataTrigger>
+
+                            <DataTrigger Binding="{Binding ElementName=idTextBoxMother,Path=Text}" Value="">
+                                <Setter Property="Button.IsEnabled" Value="False"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+            </Button>
+
+
+        </Grid>
+
+
+        <TextBlock Grid.Column="1" HorizontalAlignment="Center"  Margin="10" TextWrapping="Wrap" Text="create a new child"  FontSize="72" VerticalAlignment="Top" FontFamily="Tango BT" FontWeight="Bold"  TextAlignment="Center" Visibility="Visible"/>
+        <Image Margin="0.2,246,-0.4,-0.2" Source="123321.png" Stretch="Fill" Grid.Column="1"/>
+
+
+
+    </Grid>
+
+
+
+
+
+
+</Window>
