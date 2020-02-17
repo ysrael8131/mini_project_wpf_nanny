@@ -1,0 +1,17 @@
+C:\Users\ysrael\Source\Repos\dotNet5778_Project01_6960_0283\PL\obj\Debug\PL.csproj.CoreCompileInputs.cache
+C:\Users\ysrael\Source\Repos\dotNet5778_Project01_6960_0283\PL\bin\Debug\PL.exe.config
+C:\Users\ysrael\Source\Repos\dotNet5778_Project01_6960_0283\PL\bin\Debug\PL.exe
+C:\Users\ysrael\Source\Repos\dotNet5778_Project01_6960_0283\PL\bin\Debug\PL.pdb
+C:\Users\ysrael\Source\Repos\dotNet5778_Project01_6960_0283\PL\bin\Debug\BE.dll
+C:\Users\ysrael\Source\Repos\dotNet5778_Project01_6960_0283\PL\bin\Debug\BL.dll
+C:\Users\ysrael\Source\Repos\dotNet5778_Project01_6960_0283\PL\bin\Debug\DAL.dll
+C:\Users\ysrael\Source\Repos\dotNet5778_Project01_6960_0283\PL\bin\Debug\GoogleMapsApi.dll
+C:\Users\ysrael\Source\Repos\dotNet5778_Project01_6960_0283\PL\bin\Debug\DS.dll
+C:\Users\ysrael\Source\Repos\dotNet5778_Project01_6960_0283\PL\bin\Debug\BE.pdb
+C:\Users\ysrael\Source\Repos\dotNet5778_Project01_6960_0283\PL\bin\Debug\BL.pdb
+C:\Users\ysrael\Source\Repos\dotNet5778_Project01_6960_0283\PL\bin\Debug\BL.dll.config
+C:\Users\ysrael\Source\Repos\dotNet5778_Project01_6960_0283\PL\bin\Debug\DAL.pdb
+C:\Users\ysrael\Source\Repos\dotNet5778_Project01_6960_0283\PL\bin\Debug\DS.pdb
+C:\Users\ysrael\Source\Repos\dotNet5778_Project01_6960_0283\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
+C:\Users\ysrael\Source\Repos\dotNet5778_Project01_6960_0283\PL\obj\Debug\PL.exe
+C:\Users\ysrael\Source\Repos\dotNet5778_Project01_6960_0283\PL\obj\Debug\PL.pdb

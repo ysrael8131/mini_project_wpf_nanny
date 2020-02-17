@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<ArrayOfContract xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Contract>
+    <num_contract>10000001</num_contract>
+    <NannyID>151515151</NannyID>
+    <MotherID>111111111</MotherID>
+    <childID>999999999</childID>
+    <knowlageMeet>false</knowlageMeet>
+    <contractSigne>false</contractSigne>
+    <salaryPerHour xsi:nil="true" />
+    <salaryPerMonth>4000</salaryPerMonth>
+    <totalSalary>4000</totalSalary>
+    <ContracPer>false</ContracPer>
+    <start>2018-01-28T23:28:02.5256232+02:00</start>
+    <end>2018-02-01T00:00:00</end>
+  </Contract>
+  <Contract>
+    <num_contract>10000003</num_contract>
+    <NannyID>151515151</NannyID>
+    <MotherID>123456789</MotherID>
+    <childID>777777777</childID>
+    <knowlageMeet>false</knowlageMeet>
+    <contractSigne>false</contractSigne>
+    <salaryPerHour xsi:nil="true" />
+    <salaryPerMonth>4000</salaryPerMonth>
+    <totalSalary>4000</totalSalary>
+    <ContracPer>false</ContracPer>
+    <start>2018-01-28T23:29:25.0776714+02:00</start>
+    <end>2018-03-09T00:00:00</end>
+  </Contract>
+  <Contract>
+    <num_contract>10000005</num_contract>
+    <NannyID>151515151</NannyID>
+    <MotherID>111111111</MotherID>
+    <childID>888888888</childID>
+    <knowlageMeet>false</knowlageMeet>
+    <contractSigne>false</contractSigne>
+    <salaryPerHour xsi:nil="true" />
+    <salaryPerMonth>4000</salaryPerMonth>
+    <totalSalary>3920</totalSalary>
+    <ContracPer>false</ContracPer>
+    <start>2018-01-28T23:35:12.6691359+02:00</start>
+    <end>2018-04-19T00:00:00</end>
+  </Contract>
+  <Contract>
+    <num_contract>10000007</num_contract>
+    <NannyID>151515151</NannyID>
+    <MotherID>123456789</MotherID>
+    <childID>666666666</childID>
+    <knowlageMeet>false</knowlageMeet>
+    <contractSigne>false</contractSigne>
+    <salaryPerHour xsi:nil="true" />
+    <salaryPerMonth>4000</salaryPerMonth>
+    <totalSalary>3920</totalSalary>
+    <ContracPer>false</ContracPer>
+    <start>2018-01-28T23:52:21.8369526+02:00</start>
+    <end>2018-03-09T00:00:00</end>
+  </Contract>
+  <Contract>
+    <num_contract>10000009</num_contract>
+    <NannyID>200501645</NannyID>
+    <MotherID>200501633</MotherID>
+    <childID>200501634</childID>
+    <knowlageMeet>false</knowlageMeet>
+    <contractSigne>false</contractSigne>
+    <salaryPerHour>25</salaryPerHour>
+    <salaryPerMonth xsi:nil="true" />
+    <totalSalary>4800</totalSalary>
+    <ContracPer>true</ContracPer>
+    <start>2018-01-28T23:55:01.0772543+02:00</start>
+    <end>2018-04-20T00:00:00</end>
+  </Contract>
+</ArrayOfContract>

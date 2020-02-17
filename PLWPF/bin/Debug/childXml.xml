@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Childs>
+  <Child>
+    <id>200501634</id>
+    <MotherID>200501633</MotherID>
+    <FirstName>avram</FirstName>
+    <birthDay>28/01/2012 00:00:00</birthDay>
+    <specialNeeds>False</specialNeeds>
+    <detailsSpecialNeeds></detailsSpecialNeeds>
+  </Child>
+  <Child>
+    <id>999999999</id>
+    <MotherID>111111111</MotherID>
+    <FirstName>simen</FirstName>
+    <birthDay>12/01/2000 00:00:00</birthDay>
+    <specialNeeds>False</specialNeeds>
+    <detailsSpecialNeeds></detailsSpecialNeeds>
+  </Child>
+  <Child>
+    <id>888888888</id>
+    <MotherID>111111111</MotherID>
+    <FirstName>reoven</FirstName>
+    <birthDay>14/02/2011 00:00:00</birthDay>
+    <specialNeeds>False</specialNeeds>
+    <detailsSpecialNeeds></detailsSpecialNeeds>
+  </Child>
+  <Child>
+    <id>777777777</id>
+    <MotherID>123456789</MotherID>
+    <FirstName>levy</FirstName>
+    <birthDay>26/07/2000 00:00:00</birthDay>
+    <specialNeeds>False</specialNeeds>
+    <detailsSpecialNeeds></detailsSpecialNeeds>
+  </Child>
+  <Child>
+    <id>666666666</id>
+    <MotherID>123456789</MotherID>
+    <FirstName>gaya</FirstName>
+    <birthDay>23/02/2014 00:00:00</birthDay>
+    <specialNeeds>False</specialNeeds>
+    <detailsSpecialNeeds></detailsSpecialNeeds>
+  </Child>
+</Childs>

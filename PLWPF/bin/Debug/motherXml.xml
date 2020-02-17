@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<ArrayOfMother xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Mother>
+    <id>200501633</id>
+    <FirstName>rivka</FirstName>
+    <LastName>rech</LastName>
+    <PhoneNumber>052</PhoneNumber>
+    <Addres>אוהב ישראל 3 ביתר עילית</Addres>
+    <SearchAddres>אוהב ישראל 3 ביתר עילית</SearchAddres>
+    <elevators>true</elevators>
+    <RangeOfKm>0</RangeOfKm>
+    <arr>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>288030000000</Start>
+        <End>576330000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>288120000000</Start>
+        <End>576350000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>288150000000</Start>
+        <End>576370000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>288170000000</Start>
+        <End>576390000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>288190000000</Start>
+        <End>576400000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>288220000000</Start>
+        <End>576420000000</End>
+      </Work_information>
+    </arr>
+  </Mother>
+  <Mother>
+    <id>123456789</id>
+    <FirstName>sara</FirstName>
+    <LastName>cohen</LastName>
+    <PhoneNumber>0504145678</PhoneNumber>
+    <Addres>קאסוטו 24 ירושלים ישראל</Addres>
+    <SearchAddres>קאסוטו 24 ירושלים ישראל</SearchAddres>
+    <elevators>false</elevators>
+    <RangeOfKm>0</RangeOfKm>
+    <arr>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>false</day_work>
+        <Start>0</Start>
+        <End>0</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>342000000000</Start>
+        <End>378000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>false</day_work>
+        <Start>0</Start>
+        <End>0</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>false</day_work>
+        <Start>0</Start>
+        <End>0</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>false</day_work>
+        <Start>0</Start>
+        <End>0</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>false</day_work>
+        <Start>0</Start>
+        <End>0</End>
+      </Work_information>
+    </arr>
+  </Mother>
+  <Mother>
+    <id>111111111</id>
+    <FirstName>efrat</FirstName>
+    <LastName>amzaleg</LastName>
+    <PhoneNumber>0506134678</PhoneNumber>
+    <Addres>יחזקאל 28 ירושלים ישראל</Addres>
+    <SearchAddres>יחזקאל 28 ירושלים ישראל</SearchAddres>
+    <elevators>true</elevators>
+    <RangeOfKm>0</RangeOfKm>
+    <arr>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>558000000000</Start>
+        <End>702000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>558000000000</Start>
+        <End>702000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>558000000000</Start>
+        <End>702000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>558000000000</Start>
+        <End>702000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>558000000000</Start>
+        <End>702000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>558000000000</Start>
+        <End>702000000000</End>
+      </Work_information>
+    </arr>
+  </Mother>
+</ArrayOfMother>

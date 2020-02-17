@@ -1,0 +1,374 @@
+<?xml version="1.0"?>
+<ArrayOfNanny xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nanny>
+    <id>200501645</id>
+    <FirstName>sara</FirstName>
+    <LastName>cohen</LastName>
+    <birthDay>1958-01-28T16:41:51.8261308+02:00</birthDay>
+    <PhoneNumber>052</PhoneNumber>
+    <addres>קדושת לוי 116 ביתר עילית</addres>
+    <elevators>true</elevators>
+    <floor>4</floor>
+    <years_of_experience>5+ </years_of_experience>
+    <maxChilds>10</maxChilds>
+    <age_child_min>0</age_child_min>
+    <age_child_max>47</age_child_max>
+    <per_hour_able>true</per_hour_able>
+    <salaryPerHour>25</salaryPerHour>
+    <salaryPerMonth xsi:nil="true" />
+    <vacation_kind>true</vacation_kind>
+    <distance>0</distance>
+    <work>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>288480000000</Start>
+        <End>612120000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>288510000000</Start>
+        <End>612140000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>288540000000</Start>
+        <End>612150000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>288570000000</Start>
+        <End>612170000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>288590000000</Start>
+        <End>612180000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>288020000000</Start>
+        <End>612210000000</End>
+      </Work_information>
+    </work>
+  </Nanny>
+  <Nanny>
+    <id>123123123</id>
+    <FirstName>orit</FirstName>
+    <LastName>cakz</LastName>
+    <birthDay>1999-03-15T00:00:00</birthDay>
+    <addres>קוממיות 10 קריית גת ישראל</addres>
+    <elevators>false</elevators>
+    <floor>9</floor>
+    <maxChilds>3</maxChilds>
+    <age_child_min>10</age_child_min>
+    <age_child_max>15</age_child_max>
+    <per_hour_able>true</per_hour_able>
+    <salaryPerHour>34</salaryPerHour>
+    <salaryPerMonth xsi:nil="true" />
+    <vacation_kind>false</vacation_kind>
+    <distance>0</distance>
+    <work>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>false</day_work>
+        <Start>0</Start>
+        <End>0</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>false</day_work>
+        <Start>0</Start>
+        <End>0</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>false</day_work>
+        <Start>0</Start>
+        <End>0</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>234000000000</Start>
+        <End>306000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>false</day_work>
+        <Start>0</Start>
+        <End>0</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>false</day_work>
+        <Start>0</Start>
+        <End>0</End>
+      </Work_information>
+    </work>
+  </Nanny>
+  <Nanny>
+    <id>151515151</id>
+    <FirstName>chya</FirstName>
+    <LastName>cakz</LastName>
+    <birthDay>1999-03-15T00:00:00</birthDay>
+    <PhoneNumber>527129013</PhoneNumber>
+    <addres>אוהב ישראל 3 ביתר עילית ישראל</addres>
+    <elevators>true</elevators>
+    <floor>10</floor>
+    <years_of_experience>8</years_of_experience>
+    <maxChilds>5</maxChilds>
+    <age_child_min>12</age_child_min>
+    <age_child_max>15</age_child_max>
+    <per_hour_able>false</per_hour_able>
+    <salaryPerHour xsi:nil="true" />
+    <salaryPerMonth>4000</salaryPerMonth>
+    <vacation_kind>true</vacation_kind>
+    <recommendation>very nice nanny</recommendation>
+    <distance>0</distance>
+    <work>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>0</Start>
+        <End>828000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>0</Start>
+        <End>828000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>0</Start>
+        <End>828000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>0</Start>
+        <End>828000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>0</Start>
+        <End>828000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>0</Start>
+        <End>828000000000</End>
+      </Work_information>
+    </work>
+  </Nanny>
+  <Nanny>
+    <id>125837412</id>
+    <FirstName>leah</FirstName>
+    <LastName>cakz</LastName>
+    <birthDay>1999-03-15T00:00:00</birthDay>
+    <addres>אילת ישראל</addres>
+    <elevators>false</elevators>
+    <floor>8</floor>
+    <maxChilds>5</maxChilds>
+    <age_child_min>12</age_child_min>
+    <age_child_max>15</age_child_max>
+    <per_hour_able>false</per_hour_able>
+    <salaryPerHour xsi:nil="true" />
+    <salaryPerMonth>4000</salaryPerMonth>
+    <vacation_kind>false</vacation_kind>
+    <distance>0</distance>
+    <work>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>162000000000</Start>
+        <End>450000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>162000000000</Start>
+        <End>450000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>162000000000</Start>
+        <End>450000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>162000000000</Start>
+        <End>450000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>162000000000</Start>
+        <End>450000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>162000000000</Start>
+        <End>450000000000</End>
+      </Work_information>
+    </work>
+  </Nanny>
+  <Nanny>
+    <id>125837411</id>
+    <FirstName>rivka</FirstName>
+    <LastName>cakz</LastName>
+    <birthDay>1999-03-15T00:00:00</birthDay>
+    <addres>אילת ישראל</addres>
+    <elevators>false</elevators>
+    <floor>7</floor>
+    <maxChilds>7</maxChilds>
+    <age_child_min>1</age_child_min>
+    <age_child_max>10</age_child_max>
+    <per_hour_able>false</per_hour_able>
+    <salaryPerHour xsi:nil="true" />
+    <salaryPerMonth>4000</salaryPerMonth>
+    <vacation_kind>false</vacation_kind>
+    <distance>0</distance>
+    <work>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>162000000000</Start>
+        <End>450000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>162000000000</Start>
+        <End>450000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>162000000000</Start>
+        <End>450000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>162000000000</Start>
+        <End>450000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>162000000000</Start>
+        <End>450000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>162000000000</Start>
+        <End>450000000000</End>
+      </Work_information>
+    </work>
+  </Nanny>
+  <Nanny>
+    <id>125837415</id>
+    <FirstName>ester</FirstName>
+    <LastName>cakz</LastName>
+    <birthDay>1999-03-15T00:00:00</birthDay>
+    <addres>אילת ישראל</addres>
+    <elevators>false</elevators>
+    <floor>8</floor>
+    <maxChilds>5</maxChilds>
+    <age_child_min>12</age_child_min>
+    <age_child_max>15</age_child_max>
+    <per_hour_able>false</per_hour_able>
+    <salaryPerHour xsi:nil="true" />
+    <salaryPerMonth>4000</salaryPerMonth>
+    <vacation_kind>false</vacation_kind>
+    <distance>0</distance>
+    <work>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>162000000000</Start>
+        <End>342000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>162000000000</Start>
+        <End>342000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>162000000000</Start>
+        <End>342000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>162000000000</Start>
+        <End>342000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>162000000000</Start>
+        <End>342000000000</End>
+      </Work_information>
+      <Work_information>
+        <start />
+        <end />
+        <day_work>true</day_work>
+        <Start>162000000000</Start>
+        <End>342000000000</End>
+      </Work_information>
+    </work>
+  </Nanny>
+</ArrayOfNanny>
